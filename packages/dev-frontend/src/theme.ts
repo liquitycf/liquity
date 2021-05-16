@@ -11,8 +11,8 @@ const baseColors = {
 };
 
 const colors = {
-  primary: baseColors.blue,
-  secondary: baseColors.purple,
+  primary: baseColors.green,
+  secondary: baseColors.blue,
   accent: baseColors.cyan,
 
   success: baseColors.green,
@@ -22,9 +22,9 @@ const colors = {
   info: baseColors.blue,
   invalid: "pink",
 
-  text: "#293147",
-  background: "white",
-  muted: "#eaebed"
+  text: "#fcfcfc",
+  background: "#04052E",
+  muted: "#0d00a4"
 };
 
 const buttonBase: ThemeUIStyleObject = {
@@ -87,6 +87,7 @@ const card: ThemeUIStyleObject = {
   position: "relative",
   mt: cardGapY,
   border: 1,
+  borderRadius: 15,
   boxShadow: [1, null, 2]
 };
 
@@ -95,8 +96,8 @@ const infoCard: ThemeUIStyleObject = {
 
   padding: 3,
 
-  borderColor: "rgba(122,199,240,0.4)",
-  background: "linear-gradient(200deg, #d4d9fc, #cae9f9)",
+  borderColor: "rgba(255,255,255,0.4)",
+  // background: "linear-gradient(200deg, #d4d9fc, #cae9f9)",
 
   h2: {
     mb: 2,
@@ -118,7 +119,7 @@ const formCell: ThemeUIStyleObject = {
   bg: "background",
   border: 1,
   borderColor: "muted",
-  borderRadius: 0,
+  borderRadius: 10,
   boxShadow: [1, 2]
 };
 
@@ -141,7 +142,7 @@ const modalOverlay: ThemeUIStyleObject = {
 };
 
 const headerGradient: ThemeUIStyleObject = {
-  background: `linear-gradient(90deg, ${colors.background}, ${colors.muted})`
+  background: `linear-gradient(90deg, ${colors.background}, #140152)`
 };
 
 const theme: Theme = {
@@ -268,7 +269,8 @@ const theme: Theme = {
         py: 2,
         pr: 2,
 
-        bg: "muted",
+        bg: "#140152",
+        borderRadius: 15,
 
         fontSize: cardHeadingFontSize
       }
@@ -317,7 +319,7 @@ const theme: Theme = {
       ...formCell,
 
       textAlign: "center",
-      bg: "muted"
+      bg: baseColors.green
     },
 
     input: {
